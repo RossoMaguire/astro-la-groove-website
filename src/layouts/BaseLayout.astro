@@ -1,13 +1,13 @@
 ---
 import "../styles/tailwind.css"
-import {OPEN_GRAPH, SITE} from "../config.ts"
+import {OPEN_GRAPH, SITE} from "../config"
 
 export interface Props {
   title?: string;
   description?: string;
 }
 let { title, description } = Astro.props
-title = title ? `${title} | ${SITE.title}` : `${SITE.title} | Email, meet privacy.`
+title = title ? `${title} | ${SITE.title}` : `${SITE.title}`
 const canonicalURL = Astro.canonicalURL.toString()
 const canonicalImageSrc = new URL(OPEN_GRAPH.image.src, Astro.site).toString()
 const imageAlt = OPEN_GRAPH.image.alt
@@ -21,39 +21,6 @@ const imageAlt = OPEN_GRAPH.image.alt
     <meta name="viewport" content="width=device-width" />
     <link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="RSS" />
     <link rel="sitemap" href="/sitemap-index.xml">
-
-    <script is:inline data-swup-ignore-script>
-    window.Papercups = {
-      config: {
-        token: "81a13d1b-a34a-487e-965e-8779ddd855f1",
-        inbox: "f01194cc-2fa5-4be5-b2e1-54f42b1fc773",
-        title: "Welcome to Shroud.email",
-        subtitle: "Ask us anything in the chat window below 😊",
-        primaryColor: "#6366F1",
-        newMessagePlaceholder: "Start typing...",
-        showAgentAvailability: false,
-        agentAvailableText: "We're online right now!",
-        agentUnavailableText: "We're away at the moment.",
-        requireEmailUpfront: true,
-        iconVariant: "outlined",
-        baseUrl: "https://app.papercups.io"
-      },
-    };
-    </script>
-    <script
-      type="text/javascript"
-      data-swup-ignore-script
-      async
-      defer
-      src="https://app.papercups.io/widget.js"
-    ></script>
-    <script
-      data-swup-ignore-script
-      defer
-      data-domain="shroud.email"
-      data-api="https://shroud.email/p/api/event"
-      src="https://shroud.email/p/pjs/script.outbound-links.js"
-    ></script>
 
     <link rel="stylesheet" href="/fonts/inter/inter.css" />
     <link rel="stylesheet" href="/fonts/lexend/lexend.css" />

@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "./BaseLayout.astro"
 import "../styles/tailwind.css"
-import Navbar from "../components/organisms/navbar.vue";
+import Navbar from "../components/organisms/NavBar.vue";
 import Footer from "../components/organisms/Footer.astro"
 
 export interface Props {
@@ -16,7 +16,7 @@ let { title, description, transparentNavbar = false } = Astro.props
   <div class="min-h-full flex flex-col">
     <Navbar client:only="vue" transparentAtTop={transparentNavbar} />
 
-    <main class="flex-grow flex flex-col bg-white">
+    <main class="flex-grow flex flex-col bg-gray-50">
       <slot />
     </main>
 

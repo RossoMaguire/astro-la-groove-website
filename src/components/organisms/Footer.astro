@@ -1,31 +1,24 @@
 ---
 import NewsletterForm from "~/components/molecules/NewsletterForm.astro"
-import { Icon } from "astro-icon"
 
 const firstColLinks = [
   {
-    title: "Company", 
+    title: "La Groove", 
     children: [
       { name: "About", href: "/about/" },
-      { name: "Blog", href: "/blog/" },
-      { name: "Docs", href: "/docs/" },
-      { name: "Contact", href: "mailto:hello@shroud.email" },
-    ],
-  },
-  {
-    title: "Comparisons",
-    children: [
-      { name: "vs. Firefox Relay", href: "/vs/firefox-relay/" },
+      { name: "Pricing", href: "/pricing/" },
     ],
   },
 ]
 
 const secondColLinks = [
   {
-    title: "Practical",
+    title: "Social",
     children: [
-      { name: "Privacy", href: "/privacy/" },
-      { name: "System status", href: "https://status.shroud.email/" },
+      { name: "Facebook", href: "/" },
+      { name: "Instagram", href: "/" },
+      { name: "SoundCloud", href: "/" },
+      { name: "YouTube", href: "/" },
     ],
   },
 ]
@@ -67,27 +60,13 @@ const year = new Date().getFullYear()
         </div>
       </div>
       <div class="mt-8 xl:mt-0">
-        <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Subscribe to our newsletter</h3>
-        <p class="mt-4 text-base text-gray-300">The latest product updates and news, lovingly delivered to your inbox.</p>
+        <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Subscribe to updates</h3>
+        <p class="mt-4 text-base text-gray-300">Updates from the world of La Groove delivered to your inbox.</p>
         <NewsletterForm class="mt-4 sm:max-w-md" />
       </div>
     </div>
     <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
-      <div class="flex space-x-6 md:order-2">
-        <a href="https://fosstodon.org/@shroudemail" rel="me" target="_blank" class="text-gray-400 hover:text-gray-300">
-          <span class="sr-only">Mastodon</span>
-          <Icon pack="mdi" name="mastodon" class="h-6 w-6" />
-        </a>
-        <a href="https://twitter.com/shroud_email" target="_blank" class="text-gray-400 hover:text-gray-300">
-          <span class="sr-only">Twitter</span>
-          <Icon pack="mdi" name="twitter" class="h-6 w-6" />
-        </a>
-        <a href="https://github.com/Shroud-email/shroud.email" target="_blank" class="text-gray-400 hover:text-gray-300">
-          <span class="sr-only">GitHub</span>
-          <Icon pack="mdi" name="github" class="h-6 w-6" />
-        </a>
-      </div>
-      <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">&copy; {year} Shroud.email. All rights reserved.</p>
+      <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">&copy; {year} Website by <a style="text-decoration:underline" href="https://rossmaguire.com">RM Designs</a>. All rights reserved.</p>
     </div>
   </div>
 </footer>

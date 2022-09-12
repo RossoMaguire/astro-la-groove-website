@@ -1,20 +1,20 @@
 ---
 import LandingLayout from "../layouts/LandingLayout.astro"
 import HeroSection from "../components/organisms/HeroSection.astro"
-import HowItWorksSection from "../components/organisms/HowItWorksSection.vue"
-import FeatureSection from "../components/organisms/FeatureSection.vue"
-import NewsletterSection from "../components/organisms/NewsletterSection.astro"
-import SignupCta from "~/components/organisms/SignupCta.vue"
+import BandMembersSection from "../components/organisms/BandMembersSection.vue"
+import AboutGallerySection from "../components/organisms/AboutGallerySection.vue"
+import PromoVideo from "~/components/organisms/PromoVideo.vue"
+import ContactSection from "~/components/organisms/ContactSection.astro"
 ---
 
 <LandingLayout transparentNavbar={true}>
   <HeroSection learnMoreId="learn-more" />
 
-  <HowItWorksSection client:load id="learn-more" />
+  <AboutGallerySection client:load id="learn-more" />
 
-  <FeatureSection client:load />
+  <BandMembersSection client:load />
 
-  <SignupCta client:load />
+  <PromoVideo client:load />
 
-  <NewsletterSection />
+  <ContactSection />
 </LandingLayout>
