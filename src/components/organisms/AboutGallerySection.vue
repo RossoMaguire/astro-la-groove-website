@@ -46,7 +46,9 @@ const galleryImages = [
     class="py-16 bg-gray-50 overflow-hidden lg:py-24"
     style="margin-bottom: 160px"
   >
-    <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
+    <div
+      class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl sm:display:none"
+    >
       <svg
         class="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4"
         width="404"

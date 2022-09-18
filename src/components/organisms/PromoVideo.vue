@@ -12,9 +12,7 @@ import FadeIn from '~/components/atoms/FadeIn.vue';
           <span class="block">A taste of what to expect</span>
         </h2>
         <iframe
-          class="mx-auto"
-          width="960"
-          height="640"
+          class="mx-auto md:w-960 md:h-640 sm:h-320 sm:w-auto"
           src="https://www.youtube.com/embed/458hqH4Q48Y"
           title="YouTube video player"
           frameborder="0"

@@ -6,3 +6,7 @@
   @apply bg-indigo-400;
   height: 2px;
 }
+
+.content {
+  display: flow-root;
+}

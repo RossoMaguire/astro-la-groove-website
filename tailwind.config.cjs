@@ -17,6 +17,13 @@ module.exports = {
       spacing: {
         '14': '4rem',
       },
+      width: {
+        '960': '960px',
+      },
+      height: {
+        '640': '640px',
+        '320': '320px',
+      },
     },
   },
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
